@@ -3,6 +3,7 @@ on:
   push:
     branches:
       - actions-test
+jobs:
   build_macos:
     runs-on: macOS-latest
     steps:
