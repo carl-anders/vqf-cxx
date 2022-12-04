@@ -1,0 +1,11 @@
+name: Build
+on:
+  push:
+    branches:
+      - actions-test
+  build_macos:
+    runs-on: macOS-latest
+    steps:
+    - uses: actions/checkout@v3
+    - name: Build mac binary
+      run: cargo build --release
