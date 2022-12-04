@@ -8,5 +8,7 @@ jobs:
     runs-on: macOS-latest
     steps:
     - uses: actions/checkout@v3
+      with:
+        submodules: recursive
     - name: Build mac binary
       run: cargo build --release
